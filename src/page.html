@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <form action="#" id="form_data">
+        <div class="form_container">
+        <label name = "myInput" id="l_myInput"></label>
+        <input type="text" name = "myInput" id="myInput" placeholder="Title..." required>
+
+        <label name = "descpription" id="l_description"></label>
+        <input required type="textarea"  name = "descpription" id="descpription" placeholder="Details...">
+       
+        <label name = "task_date" id="l_task_date"></label>
+        <input required id="task_date" name = "task_date" type="date"><br>
+        <div class="priority_container">
+        <label name="priority" class="prior">Priority of Task</label><br>
+
+        <select name="priority" id="priority" class="priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+         </select>
+         </div>
+         </div>
+     <br>   
+     <input type="submit" id="addbtn" class="addBtn">
+     <span id="clear" class="addBtn">Clear</span>
+    </form>
+    </div>
+   <ul id="myUL">
+    <li>Example project</li>
+   </ul>
+</body>
+</html>
